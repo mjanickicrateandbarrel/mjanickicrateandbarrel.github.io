@@ -938,9 +938,11 @@
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <script>
     $("button").click(function(e) {
-    $('html,body').animate({
-        scrollTop: $("#" + e.target.id + "-screen").offset().top + -80},
-        'slow');
+        $("button").removeClass("active");
+        e.target.classList.add("active");
+        $('html,body').animate({
+            scrollTop: $("#" + e.target.id + "-screen").offset().top + -80},
+            'slow');
     });
 
     </script>
