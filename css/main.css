@@ -8,6 +8,10 @@ html * {
     box-sizing:border-box;
 }
 
+.row {
+    margin:0;
+}
+
 h2{    
     font-family: "Neue Helvetica W01",Helvetica,Arial,sans-serif;
     font-weight: 300;
@@ -66,7 +70,6 @@ h2{
 }
 
 main{
-    padding:0 15px;
   width: 100%;
   max-width:768px;
   background:white;
