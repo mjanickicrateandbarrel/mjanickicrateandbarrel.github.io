@@ -1,4 +1,11 @@
-body{background:#222}
+body{
+    background:#222;
+    margin:0;
+}
+
+html * {
+    box-sizing:border-box;
+}
 
 h2{    
     font-family: "Neue Helvetica W01",Helvetica,Arial,sans-serif;
