@@ -2051,53 +2051,12 @@
     </div></div>
 </main>
   
-    <script>/*
-    const sections = document.querySelectorAll('.intersect-div');
-    const config = {
-      rootMargin: '-50px 0px -55%'
-    };
-    
-    let observer = new IntersectionObserver(function (entries, self) {
-      entries.forEach(entry => {
-        console.log(entry.target.id)
-        //if (entry.isIntersecting)
-        
-        //if (entry.isIntersecting) {
-          //intersectionHandler(entry); 
-        //
-        
-      });
-    }, config);
-    
-    sections.forEach(section => {
-      observer.observe(section);
+    <script>
+    $("button").click(function(e) {
+    $('html,body').animate({
+        scrollTop: $("#" + e.target.id + "-screen").offset().top + -80},
+        'slow');
     });
-    
-    function intersectionHandler(entry) {
-      const id = entry.target.id;
-      //const currentlyActive = document.querySelector('nav li.active');
-      //const shouldBeActive = document.querySelector('nav li[data-ref=' + id + ']');
-    
-      if (currentlyActive) {
-        currentlyActive.classList.remove('active');
-      }
-      if (shouldBeActive) {
-        shouldBeActive.classList.add('active');
-      }
-    }
-    */
-    //scroll anchoring
-    $(".nav-item").on('click', function(e) {
-        //event.preventDefault();
-        //alert($("body").attr('id'));
-    
-        //$("body").scrollTo(0,500)
-        //var scollLocation = $("#" + e.target.id + "-screen").offset().top + -80;
-        //$("body").scrollTo($("#fourth-screen"), 500, {'axis':'y'});
-        //$("body").scrollTo( 800, { axis:'y' } );
-        window.scrollTo(0, 0);
-        $("body")
-    });
-    //# sourceURL=pen.js
+
     </script>
     </body></html>
