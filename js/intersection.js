@@ -51,7 +51,7 @@ function intersectionHandler(entry) {
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
-    if (document.body.scrollTop > document.getElementsByClassName("screens")[0].offsetTop && document.body.scrollTop < (document.getElementsByClassName("screens")[0].offsetTop + document.getElementsByClassName("screens")[0].offsetHeight) ) {
-        alert();
+    if ((document.body.scrollTop > document.getElementsByClassName("screens")[0].offsetTop) && (document.body.scrollTop < document.getElementsByClassName("screens")[0].offsetTop + document.getElementsByClassName("screens")[0].offsetHeight)) {
+        alert("hi");
     }
 }
