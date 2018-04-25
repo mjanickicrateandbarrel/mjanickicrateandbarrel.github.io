@@ -79,11 +79,11 @@ main{
 }
 #visor {
     height: 100vh;
-    background: black;
     width: 100%;
     overflow-y:scroll;
     overflow-x:hidden;
-    box-sizing:border-box
+    box-sizing:border-box;
+    -webkit-overflow-scrolling: touch;
   }
 .row {margin:0}
 .select-list {margin-left:15px;}
