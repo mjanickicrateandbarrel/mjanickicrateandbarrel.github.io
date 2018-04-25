@@ -1,12 +1,12 @@
 
 
 const sections = document.querySelectorAll('.sub-dub');
-const config = { //rootMargin: "40% 0% -40% 0%"
-threshold: .4
+const config = { rootMargin: "0px"
 };
 
 let observer = new IntersectionObserver(function (entries, self) {
-  entries.forEach(entry => {
+    entries.filter(entry => entry.isIntersecting)
+    .forEach(entry => {
 
     
     if (entry.isIntersecting && entry.target.id !== "sticky-header-top") {
