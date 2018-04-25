@@ -942,8 +942,8 @@
     <script src="js/intersection.js"></script>
     <script>
     $("button").click(function(e) {
-        $("button").removeClass("active");
-        e.target.classList.add("active");
+        //$("button").removeClass("active");
+        //e.target.classList.add("active");
         $('#visor').animate({
             scrollTop: $("#" + e.target.id + "-screen").offset().top + -50},
             'slow');
