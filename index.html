@@ -946,7 +946,9 @@
         //e.target.classList.add("active");
         $('#visor').animate({
             scrollTop: $("#" + e.target.id + "-screen").offset().top + -50},
-            'slow');
+        'slow');
+        console.log("#" + e.target.id + "-screen");
+        console.log($("#" + e.target.id + "-screen").offset().top + -50)
     });
 
     </script>
