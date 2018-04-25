@@ -1,12 +1,13 @@
 
 
 const sections = document.querySelectorAll('.sub-dub');
-const config = { //rootMargin: "0px"
+const config = { //rootMargin: "100vw 100vh 100vh"
 };
 
 let observer = new IntersectionObserver(function (entries, self) {
-    entries.filter(entry => entry.isIntersecting).forEach(entry => {
-    console.log(entry.target.id);
+  
+    entries.forEach(entry => {
+        console.log(entry)
     if (entry.isIntersecting && entry.target.id !== "sticky-header-top") {
       intersectionHandler(entry); 
     }
@@ -15,8 +16,7 @@ let observer = new IntersectionObserver(function (entries, self) {
       document.getElementsByClassName("sticky-nav")[0].classList.add('sticky');
     } else if(entry.isIntersecting == true && entry.target.id == "sticky-header-top"){
       document.getElementsByClassName("sticky-nav")[0].classList.remove('sticky');
-    }
-    
+    }    
   });
 }, config);
 

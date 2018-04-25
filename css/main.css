@@ -44,9 +44,10 @@ h2{
 }
 
 .sub-dub {
-  display:inline-block;
+    float:left;
   width:100%;
   position:relative;
+  margin-bottom:25px;
 }
 .sticky-nav .nav-item {
     background: none;
