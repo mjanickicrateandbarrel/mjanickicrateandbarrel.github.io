@@ -77,6 +77,14 @@ main{
   margin:0 auto;
 
 }
+#visor {
+    height: 100vh;
+    background: black;
+    width: 100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    box-sizing:border-box
+  }
 .row {margin:0}
 .select-list {margin-left:15px;}
 .spill h1 {
