@@ -5,10 +5,8 @@ const config = { rootMargin: "0px"
 };
 
 let observer = new IntersectionObserver(function (entries, self) {
-    entries.filter(entry => entry.isIntersecting)
-    .forEach(entry => {
-
-    
+    entries.filter(entry => entry.isIntersecting).forEach(entry => {
+    console.log(entry.target.id);
     if (entry.isIntersecting && entry.target.id !== "sticky-header-top") {
       intersectionHandler(entry); 
     }
@@ -18,7 +16,6 @@ let observer = new IntersectionObserver(function (entries, self) {
     } else if(entry.isIntersecting == true && entry.target.id == "sticky-header-top"){
       document.getElementsByClassName("sticky-nav")[0].classList.remove('sticky');
     }
-    
     
   });
 }, config);
