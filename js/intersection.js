@@ -1,5 +1,6 @@
+
 const sections = document.querySelectorAll('.sub-dub');
-const config = { //rootMargin: "-40%"
+const config = { rootMargin: "-50px 0px -55%"
 };
 
 let observer = new IntersectionObserver(function (entries, self) {
