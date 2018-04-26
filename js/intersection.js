@@ -7,7 +7,6 @@ const config = { root: document.querySelector("#visor"), rootMargin: '0px 0px 35
 let observer = new IntersectionObserver(function (entries, self) {
   
     entries.forEach(entry => {
-    console.log(entry)
     if (entry.isIntersecting && entry.target.id !== "sticky-header-top") {
       intersectionHandler(entry); 
     }
@@ -37,18 +36,8 @@ function intersectionHandler(entry) {
   }
  
   
-  //console.log($(shouldBeActive).offset().left - $(shouldBeActive).parent().offset().left);
+
   let activePosition = $(shouldBeActive).offset().left - $(shouldBeActive).parent().offset().left;
   $(".sticky-nav").animate({scrollLeft: activePosition}, 500);
   
 }
-
-
-/*
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-    if ((document.body.scrollTop > document.getElementsByClassName("screens")[0].offsetTop) && (document.body.scrollTop < document.getElementsByClassName("screens")[0].offsetTop + document.getElementsByClassName("screens")[0].offsetHeight)) {
-        alert("hi");
-    }
-}*/
